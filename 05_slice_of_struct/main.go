@@ -44,7 +44,7 @@ func main() {
 	tampilkanSemua(daftarMhs)
 
 	fmt.Println("\n---Fitur Pencarian---")
-	nimCari := "17181923"
+	nimCari := "17181924"
 	hasil := cariMahasiswa(daftarMhs, nimCari)
 
 	if hasil != nil {

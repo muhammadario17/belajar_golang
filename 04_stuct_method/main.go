@@ -31,6 +31,7 @@ func (m *mahasiswa) UpdateIPK(ipkBaru float64) {
 func main() {
 	fmt.Println("===SISTEM AKADEMIK KAMPUS===")
 
+	// Membuat objek Mahasiswa pertama
 	mhs1 := mahasiswa{
 		Nama:    "M. Ario",
 		NIM:     "15161780",
@@ -39,11 +40,14 @@ func main() {
 		IsLulus: false,
 	}
 
+	// Memanggil Method KenalkanDiri
 	mhs1.KenalkanDiri()
 
+	// Mengupdate IPK menggunakan Pointer Method
 	fmt.Println("\nSetelah Ujian Semester Berakhir...")
 	mhs1.UpdateIPK(3.83)
 
+	// Buktikan apakah data mhs1 benar-benar berubah
 	fmt.Println("\nCek Status Kelulusan :")
 	fmt.Printf("Nama %s | IPK Akhir %.2f | Status lulus: %t\n",
 		mhs1.Nama, mhs1.IPK, mhs1.IsLulus)
